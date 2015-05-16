@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+
+
+    <title>A Pen by  Mike Hinds</title>
+    
+    
+    
+    
+    
+    
+    
+    
+  </head>
+
+  <body>
+
+    <!-- Stage 0 Project, author Mike Hinds -->
+<!-- N.B. I have edited this from Andy's original text. Slightly lazy know, but I wanted to save time on making the notes & play around with some of the concepts in this & his other codepens... -->
+
+<!-- The <head> element. Still a total mystery to me. Note to self, go back & read <a href='http://www.htmlgoodies.com/tutorials/getting_started/article.php/3479431'> Explanation of head in HTML</a> if this isn't covered later in the course. -->
+<head>
+  <!-- The <title> element. "Normally sets the name of the browser tab". Q: Is it possible to edit this with tags? as below (see the h1 title below to get an idea of what I am look for)-->
+  <title><strike>Andy's</strike> Mike's Notes</title>
+</head>
+
+
+<!-- The <h1> tag stands for "heading 1". Heading tags go all the way up to <h6>. Lower numbered headings indicate content that is more important. -->
+<h2>Important Concepts as written by <strike>Andy</strike> Mike</h2>
+
+<font color='red'<b><h4>How the Web Works</h4></b></font> <!--h4 kind of loses it 'boldness' hence the enclosing bold tags-->
+<p>The web is a bunch of computers that communicate
+  with each other. When a person goes to a web
+  page like www.google.com, their computer sends
+  a <b><em>HTTP Request</em></b> to a <b><em>server</em></b>. The
+  server finds the appropriate HTML document and sends
+  it back to the user's computer where a <b><em>web browser</em></b>
+  interprets the page and displays it on the user's screen. 
+  <p>The image below (which I can't figure outhow to centre) appears to give a slightly more compliated view than the lecture notes. However, it seems to be more focused on how your PC connects to your router & ISP rather than the "later" part of the connection. Although WTF does a DNS do? Interesting nonetheless, plus I just added an image:
+</p>
+  <p>
+  <img src='http://www.computerhope.com/issues/pictures/internet.jpg' alt='image did not load'>       
+  <!-- remember no closing tag is needed for img. 
+ Also, could you let me know what is considered kosher in terms of putting images on websites. I am pretty sure this is OK here because i am never going to publish it. but do you have any guidance on what to do if I was to make a publically available website with such content?-->
+</p>
+<font color='red'><b><h4>HTML</h4></b></font>
+<!--so it looks to me like the font tag will not totally overwrite the formatting of the h tag, just selected parts. is this true?-->
+<p>HTML stands for <b><em>Hypertext Markup Language</em></b>. HTML documents form the majority of the
+  content on the web. HTML documents contain <em>text content</em> which describes "what you see"
+  and <em>markup</em> which describes "how it looks".
+  <a href="https://www.udacity.com/course/viewer#!/c-ud721/l-3508959201/m-48724340"> This
+  video</a> gives a good overview.
+</p>
+
+
+<!--Here I wanted to play around with the content from the div & span codepen. Probably skipping ahead a little here, but it looked cool & I can use it to more clearly do notes for this section -->
+<font color='red'><b><h4>Tags and Elements</h4></b></font>
+<p>HTML documents are made of HTML <b>elements</b>. When
+  writing HTML, we tell browsers the type of each element by using HTML <b>tags</b>.
+  </p>
+<p>To be more explicit the organization is as below with the <font color='red'> Element in red </font> and the opening & closing <font color='blue'> Tags in blue</font>:</p>
+<!-- a little more borrowing from Andy. The formatting might be a little clunky... -->
+<style>
+  div,span {
+    margin : 0px;
+    border : 2px solid;
+  }
+  div {
+    border-color:red;
+  }
+  span {
+    border-color : blue;
+  }
+</style>
+
+<div>
+<span> &lt Opening Tag &gt </span>
+Contents
+<span> &lt Closing Tag &gt </span>
+</div>
+<!-- the <style> command seems to be universal for the entire document...weird (& annoying as I wasnted my tag boxes to be different colors)-->
+<p>
+ Note that a closing tag is not always needed, such as for images (which only need the opening &lt img src = 'http://whatever' alt='blah blah something went wrong text' &gt tag)
+
+<font color='red'><b><h4>Why Computers are Stupid</h4></b></font>
+<p>Computers are stupid because they interpret instructions literally. This makes them very unforgiving since a small mistake by a programmer can cause huge problems in a program.
+</p><p>
+This reminded me of a concept that I had heard in statistics / econometric modelling (my background) which I incorrectly assumed that "we" "owned". Garabage In, Garbage Out....turns out that it acutally comes from computer science, at least according to <a href='http://en.wikipedia.org/wiki/Garbage_in,_garbage_out'>Wikipedia</a>
+</p>
+
+<font color='red'><b><h4>Inline vs Block Elements</h4></b></font>
+<p>HTML elements are either <b>inline</b> or <b>block</b>. Block
+  elements form an "invisible box" around the content inside of them.
+</p>
+
+<font color='red'><b><h4>Most important observations</h4></b></font>
+<p> HTML (or maybe just codepen) badly needs a spellchecker!</p>
+    
+    
+    
+    
+    
+  </body>
+</html>
